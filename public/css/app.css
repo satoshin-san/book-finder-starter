@@ -1,0 +1,117 @@
+/* A plain starting look. Make it yours. */
+:root {
+  --bg: #fbfaf7;
+  --fg: #222;
+  --muted: #666;
+  --line: #ddd;
+  --accent: #2f6f5e;
+  font-family: system-ui, sans-serif;
+  line-height: 1.7;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+.top, main, .foot {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.lead, .note, .author, .isbn, .foot {
+  color: var(--muted);
+}
+
+.question {
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  margin: 0 0 1rem;
+  padding: 0.75rem 1rem 1rem;
+}
+
+.choice {
+  font: inherit;
+  margin: 0.25rem 0.5rem 0.25rem 0;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+}
+
+.choice[aria-pressed="true"] {
+  background: var(--accent);
+  color: #fff;
+}
+
+.books {
+  list-style: none;
+  padding: 0;
+}
+
+.book {
+  border-top: 1px solid var(--line);
+  padding: 0.75rem 0;
+}
+
+.title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.author, .isbn {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.card {
+  border: 1px dashed var(--line);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.library {
+  margin-top: 0.5rem;
+}
+
+.library summary {
+  cursor: pointer;
+  color: var(--accent);
+}
+
+.lib-form, .lib-result {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.lib-form select, .lib-form input, .lib-result select {
+  font: inherit;
+  padding: 0.4rem;
+  max-width: 100%;
+}
+
+.libraries {
+  width: 100%;
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.sample {
+  width: 100%;
+  margin: 0;
+  color: var(--accent);
+}
+
+.credit {
+  width: 100%;
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}

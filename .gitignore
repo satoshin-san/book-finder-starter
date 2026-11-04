@@ -1,0 +1,12 @@
+# Secrets never go into this repository: keys live in your hosting service's settings
+.env
+.env.*
+.dev.vars
+*.pem
+*.key
+
+# Local tools
+*.local.txt
+node_modules/
+.wrangler/
+.DS_Store

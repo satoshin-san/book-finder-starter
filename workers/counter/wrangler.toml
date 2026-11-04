@@ -1,0 +1,14 @@
+# The counter Worker. Deploy it first, then bind it to your Pages project as CALIL_COUNTER
+# (Pages -> Settings -> Bindings -> Durable Object namespace -> this Worker's Counter class).
+name = "book-finder-counter"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+workers_dev = false
+
+[[durable_objects.bindings]]
+name = "COUNTER"
+class_name = "Counter"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["Counter"]

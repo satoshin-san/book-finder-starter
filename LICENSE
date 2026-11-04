@@ -1,0 +1,35 @@
+このリポジトリのライセンス（使ってよい決まり）の案内
+
+このリポジトリには、2種類のライセンスがあります。
+
+1. コード → MIT License（全文は LICENSE-MIT）
+   対象：public/・functions/・workers/・scripts/・tests/ の中のファイル、
+         package.json、.gitignore、data/books.csv（見出しだけの ひな型）
+   あなたが data/books.csv に書き足した本の情報は、あなたのものです。
+   商用利用・改変・再配布ができます。著作権の表示とライセンスの文を残してください。
+
+2. 説明の文書 → クリエイティブ・コモンズ 表示 4.0 国際（CC BY 4.0）
+   （全文は LICENSE-CC-BY-4.0、https://creativecommons.org/licenses/by/4.0/ ）
+   対象：README.md・SECURITY.md・LICENSE（この文書）
+   商用利用・改変・再配布ができます。使うときは、作った人の表示
+   （satoshin-san / book-finder-starter）とライセンスへのリンクを付けてください。
+
+このリポジトリに入っていないもの
+- 本のデータ（data/books.csv は 見出しだけの空の本棚です）
+- 絵・音楽・声・キャラクター・文章などの素材
+- 図書館の検索サービスの鍵（APIキー）
+
+図書館の検索サービス（カーリル）を使うときは、そのサービスの利用規約が別にあります。
+このリポジトリのライセンスは、そのサービスの使い方を許すものではありません。
+
+----
+
+License guide
+
+- Code (public/, functions/, workers/, scripts/, tests/, package.json, .gitignore, and the empty data/books.csv template):
+  MIT License. See LICENSE-MIT.
+- Documentation (README.md, SECURITY.md, this LICENSE file):
+  Creative Commons Attribution 4.0 International (CC BY 4.0). See LICENSE-CC-BY-4.0.
+  Attribution: satoshin-san / book-finder-starter.
+- Not included: book data, artwork, music, voices, characters, and any API keys.
+- Third-party services (such as the Calil library API) have their own terms.
